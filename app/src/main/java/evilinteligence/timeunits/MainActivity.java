@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     public void toggleTimer(View view) {
         Button toggler = (Button) view;
         toggler.setText("Stop!!!");
-        toggler.setBackgroundColor(Color.RED);//Doesn't work
+        toggler.setBackgroundColor(Color.RED);//Doesn't work...
         int min = Integer.parseInt(((TextView) findViewById(R.id.mins)).getText().toString());
         int sec = Integer.parseInt(((TextView) findViewById(R.id.secs)).getText().toString());
         double time = (60 * min + sec) * 1000;
